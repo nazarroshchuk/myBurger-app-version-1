@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from './BurgerIngredient.css';
+import classes from './BurgerIngredient.module.css';
 import PropTypes from 'prop-types';
 
 export class BurgerIngredient extends Component {
@@ -29,12 +29,6 @@ export class BurgerIngredient extends Component {
                 break;
             case ('bacon'):
                 ingredient = <div className={classes.Bacon}></div>;
-                break;
-            case ('seeds1'):
-                ingredient = <div className={classes.Seeds1}></div>;
-                break;
-            case ('seeds2'):
-                ingredient = <div className={classes.Seeds2}></div>;
                 break;
             default:
                 ingredient = null;
