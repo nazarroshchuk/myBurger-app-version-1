@@ -76,6 +76,10 @@ export class BurgerBuilder extends Component {
         this.setState({ purchasing: false })
     }
 
+    purcheseContinue = () => {
+        alert('We are continuing!')
+    }
+
     render() {
         const disabled = { ...this.state.ingredients}
         for ( const key in disabled) {
@@ -87,7 +91,12 @@ export class BurgerBuilder extends Component {
                 {/*{ this.state.purchasing &&*/}
                 {/*// visibility was implemented with help  styling CSS in Modal component//*/}
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancel}>
-                    <OrderSummary ingredients={this.state.ingredients}/>
+                    <OrderSummary
+                        ingredients={this.state.ingredients}
+                        cancelBtn={this.purchaseCancel}
+                        continueBtn={this.purcheseContinue}
+                        totalPrice={this.state.totalPrice}
+                    />
                 </Modal>
                 <div>
                     <Burger ingredients={this.state.ingredients}/>
