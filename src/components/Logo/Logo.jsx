@@ -1,5 +1,5 @@
 import React from "react";
-import {Aux} from "../../hoc/Aux";
+
 import classes from './Logo.module.css'
 
 export const Logo = (props) => (

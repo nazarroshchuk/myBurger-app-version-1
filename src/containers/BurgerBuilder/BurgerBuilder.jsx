@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Aux } from '../../hoc/Aux';
+import { Auxx } from '../../hoc/Auxx';
 import { Burger } from "../../components/Burger/Burger";
 import {BuildControls} from "../../components/Burger/BuildControls/BuildControls";
 import {Modal} from "../../components/UI/Modal/Modal";
@@ -87,7 +87,7 @@ export class BurgerBuilder extends Component {
         }
 
         return (
-            <Aux>
+            <Auxx>
                 {/*{ this.state.purchasing &&*/}
                 {/*// visibility was implemented with help  styling CSS in Modal component//*/}
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancel}>
@@ -111,7 +111,7 @@ export class BurgerBuilder extends Component {
                           ordered={this.purchaseHandler}
                      />
                 </div>
-            </Aux>
+            </Auxx>
         );
     }
 }

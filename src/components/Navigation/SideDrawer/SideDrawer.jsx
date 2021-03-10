@@ -3,7 +3,7 @@ import {Logo} from "../../Logo/Logo";
 import {NavigationItems} from "../NavigationItems/NavigationItems";
 import classes from './SideDrawer.module.css';
 import logo from '../../../assets/images/burger-logo.png'
-import {Aux} from "../../../hoc/Aux";
+import {Auxx} from "../../../hoc/Auxx";
 import {Backdrop} from "../../UI/Backdrop/Backdrop";
 
 export const SideDrawer = (props) => {
@@ -12,7 +12,7 @@ export const SideDrawer = (props) => {
         attachedClasses  = [ classes.SideDrawer, classes.Open];
     }
     return (
-        <Aux>
+        <Auxx>
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
                 <div className={classes.Logo}>
@@ -22,6 +22,6 @@ export const SideDrawer = (props) => {
                     <NavigationItems/>
                 </nav>
             </div>
-        </Aux>
+        </Auxx>
     );
 }
