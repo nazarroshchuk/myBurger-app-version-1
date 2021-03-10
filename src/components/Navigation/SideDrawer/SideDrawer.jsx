@@ -3,7 +3,7 @@ import {Logo} from "../../Logo/Logo";
 import {NavigationItems} from "../NavigationItems/NavigationItems";
 import classes from './SideDrawer.module.css';
 import logo from '../../../assets/images/burger-logo.png'
-import {Auxx} from "../../../hoc/Auxx";
+import {Auxx} from "../../../hoc/Auxx/Auxx";
 import {Backdrop} from "../../UI/Backdrop/Backdrop";
 
 export const SideDrawer = (props) => {
